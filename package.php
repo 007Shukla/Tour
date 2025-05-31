@@ -15,16 +15,21 @@
 <body>
     <!--Header-Section-Start  -->
     <section class="header">
-        <a href="home.php" class="logo">Traval.</a>
-        <nav class="navbar">
-            <a href="home.php">Home</a>
-            <a href="about.php">about</a>
-            <a href="package.php">package</a>
-            <a href="book.php">book</a>
-        </nav>
-        <div id="menu-btn" class="fas fa-bars"></div>
+    <a href="home.php" class="logo">Travel.</a>
+    <nav class="navbar">
+      <a href="home.php">Home</a>
+      <a href="about.php">About</a>
+      <a href="package.php">Package</a>
+      <a href="book.php">Book</a>
+      <a href="signup.php">Signup/Login</a>
+      <a href="admin.php">Admin</a>
+      <a href="contact.php">Contact Us</a>
 
-    </section>
+      
+      <!-- ✅ Added link -->
+    </nav>
+    <div id="menu-btn" class="fas fa-bars"></div>
+  </section>
     <!--Header-Section-End  -->
 
 
@@ -35,145 +40,160 @@
 
 <!-- Package section starts -->
 
+<div class="search-bar">
+  <input type="text" id="searchInput" placeholder="Search your destination..." onkeyup="filterPackages()">
+</div>
 
 <section class="packages">
   <h1 class="heading-title">
     top destinations
   </h1>
   <div class="box-container">
-    <div class="box3">
-      <div class="image">
-        <img src="image/img-01.jpeg" alt="">
-      </div>
-      <div class="content">
-        <h3>advanture & tour</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, distinctio.</p>
-        <a href="book.php" class="btn">Book now</a>
-      </div>
+  <div class="box3">
+    <div class="image">
+      <img src="image/img-01.jpeg" alt="">
     </div>
-
-    <div class="box3">
-      <div class="image">
-        <img src="image/img-02.jpg" alt="">
-      </div>
-      <div class="content">
-        <h3>advanture & tour</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, distinctio.</p>
-        <a href="book.php" class="btn">Book now</a>
-      </div>
-    </div>
-
-    
-    <div class="box3">
-      <div class="image">
-        <img src="image/img-03.jpg" alt="">
-      </div>
-      <div class="content">
-        <h3>advanture & tour</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, distinctio.</p>
-        <a href="book.php" class="btn">Book now</a>
-      </div>
-    </div>
-
-    <div class="box3">
-      <div class="image">
-        <img src="image/img-04.jpeg" alt="">
-      </div>
-      <div class="content">
-        <h3>advanture & tour</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, distinctio.</p>
-        <a href="book.php" class="btn">Book now</a>
-      </div>
-    </div>
-
-    
-    <div class="box3">
-      <div class="image">
-        <img src="image/img-05.jpeg" alt="">
-      </div>
-      <div class="content">
-        <h3>advanture & tour</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, distinctio.</p>
-        <a href="book.php" class="btn">Book now</a>
-      </div>
-    </div>
-
-    <div class="box3">
-      <div class="image">
-        <img src="image/img-06.jpg" alt="">
-      </div>
-      <div class="content">
-        <h3>advanture & tour</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, distinctio.</p>
-        <a href="book.php" class="btn">Book now</a>
-      </div>
-    </div>
-    <div class="box3">
-      <div class="image">
-        <img src="image/img-07.jpg" alt="">
-      </div>
-      <div class="content">
-        <h3>advanture & tour</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, distinctio.</p>
-        <a href="book.php" class="btn">Book now</a>
-      </div>
-    </div>
-
-    <div class="box3">
-      <div class="image">
-        <img src="image/img-08.jpeg" alt="">
-      </div>
-      <div class="content">
-        <h3>advanture & tour</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, distinctio.</p>
-        <a href="book.php" class="btn">Book now</a>
-      </div>
-    </div>
-
-    <div class="box3">
-      <div class="image">
-        <img src="image/img-09.jpeg" alt="">
-      </div>
-      <div class="content">
-        <h3>advanture & tour</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, distinctio.</p>
-        <a href="book.php" class="btn">Book now</a>
-      </div>
-    </div>
-
-    <div class="box3">
-      <div class="image">
-        <img src="image/img-10.jpg" alt="">
-      </div>
-      <div class="content">
-        <h3>advanture & tour</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, distinctio.</p>
-        <a href="book.php" class="btn">Book now</a>
-      </div>
-    </div>
-
-    <div class="box3">
-      <div class="image">
-        <img src="image/img-11.jpeg" alt="">
-      </div>
-      <div class="content">
-        <h3>advanture & tour</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, distinctio.</p>
-        <a href="book.php" class="btn">Book now</a>
-      </div>
-    </div>
-
-    <div class="box3">
-      <div class="image">
-        <img src="image/img-12.jpg" alt="">
-      </div>
-      <div class="content">
-        <h3>advanture & tour</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, distinctio.</p>
-        <a href="book.php" class="btn">Book now</a>
-      </div>
+    <div class="content">
+      <h3>Taj Mahal - Agra</h3>
+      <p>Discover the timeless beauty of the Taj Mahal, a symbol of eternal love and one of the Seven Wonders of the World.</p>
+      <p><strong>Price:</strong> ₹3,999 <span style="color: green;">(10% OFF)</span></p>
+      <a href="book.php" class="btn">Book now</a>
     </div>
   </div>
+
+  <div class="box3">
+    <div class="image">
+      <img src="image/img-02.jpg" alt="">
+    </div>
+    <div class="content">
+      <h3>Red Fort – Delhi</h3>
+      <p>Explore the historic Red Fort, a magnificent Mughal fortress representing India’s rich cultural heritage.</p>
+      <p><strong>Price:</strong> ₹2,499 <span style="color: green;">(15% OFF)</span></p>
+      <a href="book.php" class="btn">Book now</a>
+    </div>
+  </div>
+
+  <div class="box3">
+    <div class="image">
+      <img src="image/img-03.jpg" alt="">
+    </div>
+    <div class="content">
+      <h3>Manali (Himachal Pradesh)</h3>
+      <p>Escape into the lush valleys of Manali, perfect for adventure seekers and nature lovers alike.</p>
+      <p><strong>Price:</strong> ₹6,299 <span style="color: green;">(20% OFF)</span></p>
+      <a href="book.php" class="btn">Book now</a>
+    </div>
+  </div>
+
+  <div class="box3">
+    <div class="image">
+      <img src="image/img-04.jpeg" alt="">
+    </div>
+    <div class="content">
+      <h3>Kashmir</h3>
+      <p>Discover the serene valleys, snow-capped mountains, and breathtaking lakes of Kashmir. A perfect destination for peace lovers, honeymooners, and nature enthusiasts.</p>
+      <p><strong>Price:</strong> ₹7,499 <span style="color: green;">(25% OFF)</span></p>
+      <a href="book.php" class="btn">Book now</a>
+    </div>
+  </div>
+
+  <div class="box3">
+    <div class="image">
+      <img src="image/img-05.jpeg" alt="">
+    </div>
+    <div class="content">
+      <h3>Hawa Mahal (Jaipur, Rajasthan)</h3>
+      <p>Explore the iconic Palace of Winds, built in 1799 with its stunning honeycomb façade and rich cultural history at the heart of Jaipur.</p>
+      <p><strong>Price:</strong> ₹1,999 <span style="color: green;">(12% OFF)</span></p>
+      <a href="book.php" class="btn">Book now</a>
+    </div>
+  </div>
+
+  <div class="box3">
+    <div class="image">
+      <img src="image/img-06.jpg" alt="">
+    </div>
+    <div class="content">
+      <h3>Udaipur City Palace (Rajasthan)</h3>
+      <p>Dive into the royal charm of Udaipur’s City Palace, a majestic blend of Rajasthani and Mughal architecture nestled beside Lake Pichola.</p>
+      <p><strong>Price:</strong> ₹3,799 <span style="color: green;">(18% OFF)</span></p>
+      <a href="book.php" class="btn">Book now</a>
+    </div>
+  </div>
+
+  <div class="box3">
+    <div class="image">
+      <img src="image/img-07.jpg" alt="">
+    </div>
+    <div class="content">
+      <h3>Dhai Din Ka Jhopda</h3>
+      <p>Located in Ajmer, this historical mosque was built in just two and a half days. It’s a unique fusion of Hindu and Islamic architecture.</p>
+      <p><strong>Price:</strong> ₹1,299 <span style="color: green;">(5% OFF)</span></p>
+      <a href="book.php" class="btn">Book now</a>
+    </div>
+  </div>
+
+  <div class="box3">
+    <div class="image">
+      <img src="image/img-08.jpeg" alt="">
+    </div>
+    <div class="content">
+      <h3>Darjeeling (West Bengal)</h3>
+      <p>Ride the iconic toy train and witness panoramic views of the Himalayas. Darjeeling is known for tea gardens and Kanchenjunga views.</p>
+      <p><strong>Price:</strong> ₹4,999 <span style="color: green;">(22% OFF)</span></p>
+      <a href="book.php" class="btn">Book now</a>
+    </div>
+  </div>
+
+  <div class="box3">
+    <div class="image">
+      <img src="image/img-09.jpeg" alt="">
+    </div>
+    <div class="content">
+      <h3>Rishikesh (Uttarakhand)</h3>
+      <p>Explore the adventure capital of India — Rishikesh! From thrilling river rafting to peaceful yoga retreats and the Ganga Aarti.</p>
+      <p><strong>Price:</strong> ₹2,999 <span style="color: green;">(17% OFF)</span></p>
+      <a href="book.php" class="btn">Book now</a>
+    </div>
+  </div>
+
+  <div class="box3">
+    <div class="image">
+      <img src="image/img-10.jpg" alt="">
+    </div>
+    <div class="content">
+      <h3>Rajgad Fort (Maharashtra)</h3>
+      <p>Explore the legacy of Chhatrapati Shivaji Maharaj at Rajgad Fort. Surrounded by misty hills and scenic views, ideal for trekking.</p>
+      <p><strong>Price:</strong> ₹2,299 <span style="color: green;">(10% OFF)</span></p>
+      <a href="book.php" class="btn">Book now</a>
+    </div>
+  </div>
+
+  <div class="box3">
+    <div class="image">
+      <img src="image/img-11.jpeg" alt="">
+    </div>
+    <div class="content">
+      <h3>Vaishno Devi (Jammu & Kashmir)</h3>
+      <p>Embark on a divine journey to Vaishno Devi Temple, nestled in the Trikuta Mountains. A sacred site with spiritual energy.</p>
+      <p><strong>Price:</strong> ₹3,499 <span style="color: green;">(14% OFF)</span></p>
+      <a href="book.php" class="btn">Book now</a>
+    </div>
+  </div>
+
+  <div class="box3">
+    <div class="image">
+      <img src="image/img-12.jpg" alt="">
+    </div>
+    <div class="content">
+      <h3>Kedarnath (Uttarakhand)</h3>
+      <p>Located in the lap of the Himalayas, Kedarnath Temple is one of the most revered shrines dedicated to Lord Shiva.</p>
+      <p><strong>Price:</strong> ₹5,999 <span style="color: green;">(19% OFF)</span></p>
+      <a href="book.php" class="btn">Book now</a>
+    </div>
+  </div>
+</div>
+
 
   <div class="load-more"><span class="btn">load more</span></div>
 </section>

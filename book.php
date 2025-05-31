@@ -14,17 +14,22 @@
 </head>
 <body>
     <!--Header-Section-Start  -->
-    <section class="header">
-        <a href="home.php" class="logo">Traval.</a>
-        <nav class="navbar">
-            <a href="home.php">Home</a>
-            <a href="about.php">about</a>
-            <a href="package.php">package</a>
-            <a href="book.php">book</a>
-        </nav>
-        <div id="menu-btn" class="fas fa-bars"></div>
+   <section class="header">
+    <a href="home.php" class="logo">Travel.</a>
+    <nav class="navbar">
+      <a href="home.php">Home</a>
+      <a href="about.php">About</a>
+      <a href="package.php">Package</a>
+      <a href="book.php">Book</a>
+      <a href="signup.php">Signup/Login</a>
+      <a href="admin.php">Admin</a>
+      <a href="contact.php">Contact Us</a>
 
-    </section>
+      
+      <!-- ✅ Added link -->
+    </nav>
+    <div id="menu-btn" class="fas fa-bars"></div>
+  </section>
     <!--Header-Section-End  -->
 
 
@@ -89,15 +94,6 @@
 
 
 <!-- Booking Section Ends -->
-
-
-
-
-
-
-
-
-
 
 
 <!-- Footer section start -->

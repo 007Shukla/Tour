@@ -57,3 +57,16 @@ loadMoreBtn.addEventListener("click", () => {
     loadMoreBtn.style.display = 'none';
   }
 });
+function filterPackages() {
+  const input = document.getElementById('searchInput').value.toLowerCase();
+  const boxes = document.querySelectorAll('.box3');
+
+  boxes.forEach((box) => {
+    const title = box.querySelector('h3').innerText.toLowerCase();
+    if (title.includes(input)) {
+      box.style.display = "block";
+    } else {
+      box.style.display = "none";
+    }
+  });
+}
